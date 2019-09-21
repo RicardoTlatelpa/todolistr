@@ -30,6 +30,7 @@ class Todolist extends Component {
             value={item.name}
             importance={item.important}
             veryImportant={item.veryImportant}
+            emoji = {item.emoji}
             class={
               item.important
                 ? "listitem-item"

@@ -8,7 +8,8 @@ class Form extends Component {
     this.state = {
       name: "",
       important: false,
-      veryImportant: false
+      veryImportant: false,
+      emoji: "💙"
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleCheck = this.handleCheck.bind(this);

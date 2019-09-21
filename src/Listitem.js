@@ -14,7 +14,8 @@ class Listitem extends Component {
     return (
       <React.Fragment>
         <li className={this.props.class}>
-          {this.props.value}
+          {this.props.value}{" "}
+          {this.props.class === "listitem-vimportant" ? this.props.emoji : null}
           {this.props.value === undefined ? (
             ""
           ) : (
