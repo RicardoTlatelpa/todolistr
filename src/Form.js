@@ -36,14 +36,16 @@ class Form extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="Form">
         <input
+          className="Form-input"
           type="text"
           name="name"
           value={this.state.name}
           onChange={this.handleChange}
         />
         <input
+          className="Form-input"
           type="checkbox"
           name="important"
           value={this.state.checkbox}
@@ -51,6 +53,7 @@ class Form extends Component {
         />
         Important?
         <input
+          className="Form-input"
           type="checkbox"
           name="veryImportant"
           value={this.state.veryImportant}

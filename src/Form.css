@@ -1,4 +1,10 @@
 .Form-button{
-  position:absolute;
+  display:block;
+  margin:auto;
   cursor: pointer;
+}
+.Form-input{
+  display:block;
+  margin:auto;
+
 }
