@@ -38,7 +38,7 @@ class Form extends Component {
     return (
       <form onSubmit={this.handleSubmit} className="Form">
         <input
-          className="Form-input"
+          className="Form-input-display"
           type="text"
           name="name"
           value={this.state.name}

@@ -2,9 +2,14 @@
   display:block;
   margin:auto;
   cursor: pointer;
+  margin-top: 2em;
 }
 .Form-input{
   display:block;
   margin:auto;
-
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.Form-input-display{
+  margin-bottom: 1em;
 }
