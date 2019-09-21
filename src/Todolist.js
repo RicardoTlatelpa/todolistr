@@ -29,7 +29,14 @@ class Todolist extends Component {
             id={item.id}
             value={item.name}
             importance={item.important}
-            class={item.important ? "listitem-item" : "listitem-nonitem"}
+            veryImportant={item.veryImportant}
+            class={
+              item.important
+                ? "listitem-item"
+                : item.veryImportant
+                ? "listitem-vimportant"
+                : "listitem-nonitem"
+            }
             remove={this.removeItem}
           />
         ))}

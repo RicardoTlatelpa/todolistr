@@ -7,11 +7,13 @@ class Form extends Component {
     super(props);
     this.state = {
       name: "",
-      important: false
+      important: false,
+      veryImportant: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleCheck = this.handleCheck.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleVeryImportant = this.handleVeryImportant.bind(this);
   }
   handleSubmit(event) {
     event.preventDefault();
@@ -22,6 +24,9 @@ class Form extends Component {
       console.log("Sike you woulda thought");
     }
     console.log(this.state);
+  }
+  handleVeryImportant(event) {
+    this.setState({ [event.target.name]: !this.state.veryImportant });
   }
   handleCheck(event) {
     this.setState({ [event.target.name]: !this.state.important });
@@ -45,6 +50,13 @@ class Form extends Component {
           onChange={this.handleCheck}
         />
         Important?
+        <input
+          type="checkbox"
+          name="veryImportant"
+          value={this.state.veryImportant}
+          onChange={this.handleVeryImportant}
+        />
+        Very Important(For 아름 Only)
         <button className="Form-button">Click me! </button>
       </form>
     );
